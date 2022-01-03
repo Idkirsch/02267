@@ -51,5 +51,12 @@ class CalculatorTest {
         assertEquals(expected,actual);
     }
 
+    @Test
+    void testAddNewDelimiter() {
+        Calculator calculator = new Calculator();
+        int expected = 3;
+        int actual = calculator.add("//;\n1;2");
+        assertEquals(expected,actual);
+    }
 
 }
