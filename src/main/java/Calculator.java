@@ -8,7 +8,9 @@ public class Calculator {
             return Integer.parseInt(numbers);
         }
         if(numbers.length() > 1){
-            String[] splitNumbers = numbers.split("[,]",0);
+           // String[] splitNumbers = numbers.split("[,]",0);
+            String[] splitNumbers = numbers.split("[\r\n,]+",0);
+
             int total=0;
 
             for (String myString: splitNumbers) {
